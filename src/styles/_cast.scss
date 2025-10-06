@@ -1,0 +1,43 @@
+.cast {
+    padding: 1vw 2.6vw;
+    &__content{
+        border-top: solid 1px;
+        border-color: rgb(180, 179, 179);
+
+        &__title {
+            margin-top: 12px;
+            a {
+                text-decoration: none;
+                color: black;
+                h3 {
+                    font-size: 17px;
+                }
+            }
+        }
+    &__cast{
+        ul{
+            display: grid;
+            grid-template-columns:repeat(8, 1fr);
+            gap: 2px;
+        }
+        
+        &__person {
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            
+            p:nth-child(3){
+                color:#0000008F;
+            }
+
+            img {
+                border-radius: 100%;
+                max-width: 100%;
+                margin-bottom: 8px;
+            }
+
+            
+        }
+    }
+    }
+}

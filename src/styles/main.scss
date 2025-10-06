@@ -1,7 +1,12 @@
 @use 'hero';
+@use 'trailers';
+@use 'cast';
+@use 'description';
+@use 'footer';
+@use 'header';
 
 body {
-    background-color: black;
+    background-color: #FFFFFFA3;
 }
 
 * {

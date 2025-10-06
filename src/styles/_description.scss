@@ -1,0 +1,23 @@
+.description {
+    padding: 1vw 2.6vw;
+    height: 300px;
+    background-color:#F2F2F2;
+
+    &__content {
+        margin-top: 20px;
+        font-size: 17px;
+        
+        h3{
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+        p{
+            text-align: justify;
+            inline-size: 510px;
+            overflow-wrap: break-word;
+            font-size: 15px;
+            color: #0000008f;
+        }
+    }
+
+}

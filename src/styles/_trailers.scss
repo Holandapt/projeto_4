@@ -1,0 +1,31 @@
+.trailers {
+    padding: 1vw 2.6vw;
+
+    &__content {
+        &__title {
+            padding-bottom: 18px;
+            font-size: 17px;
+        }
+    &__videos{
+        &__video {
+            display: flex;
+            position: relative;
+            
+            img {
+                width: 300px;
+                border-radius: 10%;
+                margin-right: 20px;
+            }
+            
+            p{
+                position: absolute;
+                top: 75%;
+                z-index: 1;
+                color: #FFFFFFEB;
+                font-weight: bold;
+                margin-left: 10px;
+            }
+        }
+    }
+} 
+}
