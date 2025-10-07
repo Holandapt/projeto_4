@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .cast {
     padding: 1vw 2.6vw;
     &__content{
@@ -9,9 +11,6 @@
             a {
                 text-decoration: none;
                 color: black;
-                h3 {
-                    font-size: 17px;
-                }
             }
         }
     &__cast{
@@ -24,10 +23,9 @@
         &__person {
             padding: 15px;
             text-align: center;
-            font-size: 12px;
             
             p:nth-child(3){
-                color:#0000008F;
+                color:variaveis.$corSecudanria;
             }
 
             img {
@@ -35,8 +33,6 @@
                 max-width: 100%;
                 margin-bottom: 8px;
             }
-
-            
         }
     }
     }

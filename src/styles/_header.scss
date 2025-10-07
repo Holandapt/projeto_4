@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .header {
     padding: 1vw 2.6vw;
     background-color: black;
@@ -6,12 +8,15 @@
     position: sticky;
     top: 0;
     z-index: 1;
+
+    &--is-hidden {
+        position:initial;
+    }
     
     &__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
-        font-size: 13px;
         .header__logo {
             display: flex;
             align-items: center;
@@ -21,12 +26,11 @@
             display: flex;
             justify-content: center;
             margin-left: 6px;
-            color: #FFFFFFA3;
+            color: variaveis.$corDetalhes;
             
             a {
                 text-decoration: none;
-                color: #ffffffEB;
-                font-size: 16px;
+                color: variaveis.$corPrincipal;
                 cursor: pointer;
                 justify-content: center;
             }
@@ -42,7 +46,7 @@
                 height: 28px;
                 padding: 0 12px;
                 border: none;
-                color: #ffffffEB;
+                color: variaveis.$corPrincipal;
                 font-weight: bold;
                 align-items: center;
                 cursor: pointer;

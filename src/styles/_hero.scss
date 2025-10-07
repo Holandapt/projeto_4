@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .hero { 
     display: flex;
     align-items: end;
@@ -12,9 +14,8 @@
         &__description {
             margin-bottom: 40px;            
             button {
-                background-color: #FFFFFFEB;
+                background-color: variaveis.$corPrincipal;
                 font-weight: bold;
-                font-size: 13px;
                 height: 48px;
                 width: 70%;;
                 margin-top: 15px;
@@ -33,7 +34,7 @@
                 }
             }
             &__classification {
-                color: #FFFFFFEB;
+                color: variaveis.$corPrincipal;
             }
             &__sinopse {
                 inline-size: 310px;
@@ -42,8 +43,7 @@
                 align-items: center;
                 
                 li {
-                    font-size: 15px;
-                    color: #FFFFFFA3;
+                    color: variaveis.$corDetalhes;
                 }
                 
                 li:nth-child(2){
@@ -52,7 +52,6 @@
                 }
                 
                 &__details{
-                    font-size: 13px;
                     display: flex;
                     margin-top: 9px;
                     gap: 6px;
@@ -68,12 +67,12 @@
                 position: absolute;
                 
                 span {
-                    color: #FFFFFFA3;
-                    font-size: 13px;
+                    color: variaveis.$corDetalhes;
+                    
                 } 
                 
                 a {
-                    color:#FFFFFFEB;
+                    color:variaveis.$corPrincipal;
                     text-decoration: none;
                     
                 }

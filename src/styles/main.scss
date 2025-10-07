@@ -4,9 +4,10 @@
 @use 'description';
 @use 'footer';
 @use 'header';
+@use 'variaveis';
 
 body {
-    background-color: #FFFFFFA3;
+    background-color: #fbfbfb;
 }
 
 * {
@@ -19,12 +20,28 @@ body {
 
 @font-face {
     font-family: Avenir;
-    src: url(../fonts/Avenir-Regular.woff2);
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
     font-weight: 400;
 }
 
 @font-face {
     font-family: Avenir;
-    src: url(../fonts/Avenir-Bold.woff2);
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
     font-weight: 700;
+}
+
+@mixin text ($font-size:15px){
+    font-size: $font-size;
+}
+
+.text--big {
+    @include text(17px) 
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(13px)
 }

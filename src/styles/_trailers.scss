@@ -1,10 +1,11 @@
+@use 'variaveis';
+
 .trailers {
     padding: 1vw 2.6vw;
 
     &__content {
         &__title {
             padding-bottom: 18px;
-            font-size: 17px;
         }
     &__videos{
         &__video {
@@ -21,7 +22,7 @@
                 position: absolute;
                 top: 75%;
                 z-index: 1;
-                color: #FFFFFFEB;
+                color: variaveis.$corPrincipal;
                 font-weight: bold;
                 margin-left: 10px;
             }
