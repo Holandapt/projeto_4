@@ -1,17 +1,29 @@
 @use 'variaveis';
 
 .hero { 
-    display: flex;
-    align-items: end;
-    padding: 1vw 2.6vw;
-    background-image: url('../images/fundo_hero.webp');
-    background-position: center;
-    width: 100%;
-    height: 675px;
-    background-repeat: no-repeat;
-    background-size:cover ;
+    
     &__content {
+        display: flex;
+        align-items: end;
+        padding: 2.6vw;
+        background-image: url('../images/fundo_hero.webp');
+        background-position: center;
+        width: 100%;
+        height: 675px;
+        background-repeat: no-repeat;
+        background-size:cover;
+
+        @media (max-width:768px) {
+            background-image: url('../images/fundo_tele.webp');
+            background-size: cover;
+        }
+
         &__description {
+            
+            @media (max-width: 768px) {
+                display: block;
+                text-align: center;
+            }
             margin-bottom: 40px;            
             button {
                 background-color: variaveis.$corPrincipal;
@@ -66,6 +78,10 @@
                 max-width: 300px;
                 position: absolute;
                 
+                @media (max-width:768px) {
+                    display: none;
+                }
+
                 span {
                     color: variaveis.$corDetalhes;
                     
@@ -84,13 +100,19 @@
 .logo_desc {
     display: flex;
     align-items: center;
-
+        @media (max-width: 768px) {
+            display: block;
+    }
     img {
         display: flex;
         width: 28px;
         border-radius: 50px;
         margin-right: 6px;
         align-items: center;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 }
 

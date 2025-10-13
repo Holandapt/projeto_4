@@ -1,8 +1,8 @@
 @use 'variaveis';
 
 .trailers {
-    padding: 1vw 2.6vw;
-
+    padding: 2.6vw;
+    
     &__content {
         &__title {
             padding-bottom: 18px;
@@ -11,6 +11,12 @@
         &__video {
             display: flex;
             position: relative;
+
+            @media (max-width:768px) {
+                display: block;
+                position: relative;
+                max-width: 100%;
+            }
             
             img {
                 width: 300px;
@@ -25,7 +31,15 @@
                 color: variaveis.$corPrincipal;
                 font-weight: bold;
                 margin-left: 10px;
+
             }
+        }
+
+        @media (max-width:768px){
+            .trailers__content__videos__video1 {
+                position: relative;
+            }
+
         }
     }
 } 

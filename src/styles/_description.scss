@@ -1,11 +1,21 @@
 @use 'variaveis';
+
 .description {
-    padding: 1vw 2.6vw;
+    padding: 2.6vw;
     height: 300px;
     background-color:#F2F2F2;
+    
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
 
     &__content {
         margin-top: 20px;
+
+        @media (max-width:768px){
+            max-width: 100%;
+        }
+
         h3{
             margin-bottom: 10px;
         }
@@ -16,6 +26,14 @@
             font-size: 15px;
             color: variaveis.$corSecudanria;
         }
+
+        @media (max-width:768px){
+            p {
+                max-width: 100%;
+                inline-size: none;
+            }
+        }
+
     }
 
 }
